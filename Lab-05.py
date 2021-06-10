@@ -1,4 +1,7 @@
 def ord_segunda(endereco):
+    """
+    Retorna a lista com as regras de ordenacao de segunda feira
+    """
     chars_minusculos = 0
     for caractere in list(endereco):
         chars_minusculos += 1 if caractere.islower() else 0
@@ -6,6 +9,9 @@ def ord_segunda(endereco):
 
 
 def ord_terca(endereco):
+    """
+    Retorna a lista com as regras de ordenacao de terca feira
+    """
     chars_maiusculos = 0
     for caractere in list(endereco):
         chars_maiusculos += 1 if caractere.isupper() else 0
@@ -13,6 +19,9 @@ def ord_terca(endereco):
 
 
 def ord_quarta(endereco):
+    """
+    Retorna a lista com as regras de ordenacao de quarta feira
+    """
     letras = 0
     for caractere in list(endereco):
         letras += 1 if ord('A') <= ord(caractere) <= ord('z') else 0
@@ -20,10 +29,16 @@ def ord_quarta(endereco):
 
 
 def ord_quinta(endereco):
+    """
+    Retorna a lista com as regras de ordenacao de quinta feira
+    """
     return len(endereco.split(" "))
 
 
 def ord_sexta(endereco):
+    """
+    Retorna a lista com as regras de ordenacao de sexta feira
+    """
     soma = 0
     for caractere in list(endereco):
         soma += ord(caractere)
