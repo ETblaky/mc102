@@ -29,7 +29,6 @@ while dimensao[0] != 0 and dimensao[1] != 0:
                 elementos_comuns.append(elemento)
             elemento_visto[elemento] += 1  # Declara que elemento foi visto +1x,senão "elementos_comuns" teria repetidos
 
-
     matriz_menor = matriz_M if dimensao[0] < dimensao[1] else matriz_N
 
     # Remove da matriz menor os elementos em comum e M e N
